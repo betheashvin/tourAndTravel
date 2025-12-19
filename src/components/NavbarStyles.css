@@ -39,6 +39,10 @@
   border-radius: 4px;
 }
 
+.nav-links i {
+  margin-right: 8px;
+}
+
 .nav-links:hover {
   background-color: #01959a;
   color: white;
@@ -69,12 +73,13 @@ button:hover {
 .menu-icons {
   display: none;
 }
-
 @media screen and (max-width: 850px) {
   .NavbarItems {
-    z-index: 99;
+    z-index: 999;
+    position: relative; /* Fixes stacking order */
   }
-  
+
+  /* 1. Fix the Menu Container */
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -83,49 +88,54 @@ button:hover {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 0;
+    top: 100%; /* Pushes it right below the white bar */
     left: -100%;
     opacity: 0;
     align-items: stretch;
-    padding: 80px 0 30px 0;
+    padding: 20px 0;
     margin: 0;
-    transition: 0.3s ease-in-out;
+    list-style: none; /* REMOVES THE BLACK DOTS */
+    border-radius: 0 0 13px 13px; /* Rounds the bottom corners */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 13px;
+    transition: all 0.3s ease-in-out;
   }
 
   .nav-menu.active {
     left: 0;
     opacity: 1;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
+    z-index: 99;
   }
 
+  /* 2. Fix the Links */
   .nav-links {
     display: block;
     width: 100%;
     font-size: 1.2rem;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     text-align: center;
+    color: #222; /* Ensures text is visible */
   }
 
   .nav-links:hover {
-    background-color: #1888ff;
+    background-color: #f5f5f5; /* Subtle hover effect */
+    color: #222;
     transition: none;
   }
 
+  /* 3. Hide the Desktop Button */
   button {
     display: none;
   }
 
+  /* 4. Fix the Mobile Sign Up Button */
   .nav-links-mobile {
     display: block;
     text-align: center;
-    padding: 1.5rem;
-    margin: 2rem auto;
+    margin: 1.5rem auto; /* Centers it with spacing */
+    padding: 0.8rem 2rem;
     border-radius: 4px;
     width: 80%;
-    background: #01959a;
+    background: #01959a; /* Teal color */
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
@@ -137,9 +147,9 @@ button:hover {
     display: block;
     cursor: pointer;
   }
-  
+
   .menu-icons i {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #222;
   }
 }
