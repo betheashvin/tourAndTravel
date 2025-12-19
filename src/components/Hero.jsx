@@ -1,21 +1,22 @@
-import "./HeroStyles.css"
+import "./HeroStyles.css";
+import { Link } from "react-router-dom";
 
 function Hero(props) {
-    return (
-        <>
-        <div className={props.cName}>
-            <img alt="Heroimg" src={props.heroImg}/>
+  return (
+    <>
+      <div className={props.cName}>
+        <img alt="Heroimg" src={props.heroImg} />
 
         <div className="hero-text">
-            <h1>{props.title}</h1>
-            <p>{props.text}</p>
-            <a href={props.url} className={props.btnClass}>
-                {props.buttonText}
-            </a>       
-            </div>    
+          <h1>{props.title}</h1>
+          <p>{props.text}</p>
+          <Link to={props.url} className={props.btnClass}>
+            {props.buttonText}
+          </Link>
         </div>
-        </>
-    );
+      </div>
+    </>
+  );
 }
 
 export default Hero;
