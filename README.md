@@ -1,16 +1,46 @@
-# React + Vite
+# 🌍 Trippy - Tour & Travel Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive travel agency website built with **React** and **Vite**. 
+This project was built to practice Component-Based Architecture, Client-Side Routing, and Responsive UI Design.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
+* **Framework:** React JS (Functional Components + Hooks)
+* **Build Tool:** Vite (Fast HMR)
+* **Routing:** React Router v6
+* **Styling:** CSS3 (Mobile-First approach)
+* **Icons:** FontAwesome
 
-## React Compiler
+## ✨ Key Features
+* **Dynamic Components:** Reused a single `Hero` component across multiple pages by passing data via Props.
+* **Mobile Responsive:** Fully functional hamburger menu that toggles state for mobile devices.
+* **Single Page Application (SPA):** Smooth page transitions without reloading using `react-router-dom`.
+* **Data Mapping:** Navigation and Trip cards are generated dynamically by mapping over data arrays, making it easy to add new content.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 What I Learned
+Building this project helped me solidify several core React concepts:
+1.  **State Management:** Used `useState` to handle UI logic like the mobile menu toggle.
+2.  **Props & Reusability:** Learned how to pass data *down* to child components to keep code DRY.
+3.  **Modern React Patterns:** Migrated older Class Component tutorials into modern **Functional Components** to stay up-to-date with industry standards.
 
-## Expanding the ESLint configuration
+## 🛠️ How to Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repo:**
+   ```bash
+   git clone [https://github.com/betheashvin/tourAndTravel.git](https://github.com/betheashvin/tourAndTravel.git)
+```
+2. Install dependencies:
+
+Bash
+```
+cd tourAndTravel
+npm install
+```
+
+3. Start the server:
+
+Bash
+```
+npm run dev
+```
