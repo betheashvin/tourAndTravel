@@ -50,6 +50,12 @@ img {
   color: #222;
 }
 
+.hero-text .show:hover {
+  background-color: #01959a;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
 .hero-text .hide {
   display: none;
 }
@@ -59,14 +65,19 @@ img {
     font-size: 2rem;
     padding: 10px 20px;
   }
-  
+
   .hero-text p {
     font-size: 1.1rem;
     padding: 0 0 2rem 0;
   }
-  
+
   .hero-text .show {
     padding: 0.6rem 1.1rem;
     font-size: 1rem;
+  }
+  .hero-text .show:hover {
+    background-color: #01959a;
+    color: white;
+    transition: 0.2s ease-in-out;
   }
 }
