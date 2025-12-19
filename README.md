@@ -26,21 +26,19 @@ Building this project helped me solidify several core React concepts:
 
 ## 🛠️ How to Run Locally
 
-1. **Clone the repo:**
+1. **Clone the repository:**
    ```bash
    git clone [https://github.com/betheashvin/tourAndTravel.git](https://github.com/betheashvin/tourAndTravel.git)
-```
-2. Install dependencies:
+   ```
 
-Bash
-```
-cd tourAndTravel
-npm install
-```
+2. **Install dependencies:**
+   Navigate into the project folder and install the required packages.
+   ```bash
+   cd tourAndTravel
+   npm install
+   ```
 
-3. Start the server:
-
-Bash
-```
-npm run dev
-```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
